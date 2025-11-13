@@ -5,7 +5,6 @@ testing de dylan
 organizacion de archivos
 testing jafeth
 test fallo 
-# Explicacion
 Cuando trabajamos en un proyecto y modificamos algún archivo, esos cambios no se guardan automáticamente en el repositorio. Por eso existe git add, que sirve para indicarle a Git qué archivos queremos incluir en el próximo registro de cambios. Es como seleccionar qué modificaciones formarán parte de la siguiente versión. Por ejemplo, si editamos index.html, usamos git add index.html. Y si queremos preparar todos los archivos modificados, usamos git add ..
 
 Después viene git commit -m, que es como capturar una “fotografía” del estado del proyecto. Un commit registra formalmente los cambios que realizamos, acompañado de un mensaje que explique qué se hizo o el motivo. Ese comentario ayuda a mantener un historial claro. El parámetro -m significa “message”. Por ejemplo:
@@ -16,8 +15,6 @@ Luego está git push, que se utiliza para enviar los commits al repositorio remo
 Por su parte, git pull hace lo contrario: trae a nuestra máquina los cambios que se encuentran en el repositorio remoto. Es fundamental cuando se trabaja en equipo, ya que garantiza que estemos trabajando con la versión más actual del proyecto.
 
 También existe git rebase, que sirve para reorganizar o reaplicar commits sobre otra base. En lugar de hacer merges que a veces generan un historial complicado, el rebase acomoda los cambios de manera que parezca que se hicieron en secuencia limpia. Es útil para mantener un historial más ordenado, especialmente cuando se trabaja con varias ramas.
-
-Un caso especial es git rebase -i HEAD~x, donde “x” representa cuántos commits hacia atrás queremos revisar. El -i significa “interactivo”, lo que nos permite editar, unir, renombrar o incluso eliminar commits anteriores. Por ejemplo, git rebase -i HEAD~3 permite modificar los últimos tres commits antes de compartirlos. Es como poder ajustar la historia del proyecto antes de publicarla.
 
 El comando git status nos da un resumen de la situación actual: qué archivos han cambiado, cuáles están listos para commit y en qué rama estamos trabajando.
 
