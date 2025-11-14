@@ -30,3 +30,5 @@ Con git checkout podemos movernos entre ramas o versiones anteriores del proyect
 
 Finalmente, git commit --amend sirve para modificar el último commit. Si se nos olvidó incluir un archivo o queremos ajustar el mensaje, este comando reescribe ese último registro. Es como editar la última foto antes de archivarla.
 Si solo deseamos actualizar el contenido del commit sin cambiar el mensaje, se usa git commit --amend --no-edit. Esto reemplaza los cambios del commit anterior, pero deja el texto del mensaje intacto. Es ideal para pequeñas correcciones de último momento.
+
+test rebase alexia
